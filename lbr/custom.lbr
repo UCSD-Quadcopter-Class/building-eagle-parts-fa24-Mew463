@@ -86,10 +86,10 @@
 <wire x1="1.05" y1="-0.675" x2="-1.05" y2="-0.675" width="0.12" layer="51"/>
 <text x="0" y="1.5" size="0.9" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.5" size="0.9" layer="27" font="vector" align="top-center">&gt;VALUE</text>
-<wire x1="-1.9" y1="0.9" x2="-1.9" y2="-0.9" width="0.05" layer="39"/>
-<wire x1="-1.9" y1="-0.9" x2="1.9" y2="-0.9" width="0.05" layer="39"/>
-<wire x1="1.9" y1="-0.9" x2="1.9" y2="0.9" width="0.05" layer="39"/>
-<wire x1="1.9" y1="0.9" x2="-1.9" y2="0.9" width="0.05" layer="39"/>
+<wire x1="-2.4" y1="1.4" x2="-2.4" y2="-1.4" width="0.05" layer="39"/>
+<wire x1="-2.4" y1="-1.4" x2="2.4" y2="-1.4" width="0.05" layer="39"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="1.4" width="0.05" layer="39"/>
+<wire x1="2.4" y1="1.4" x2="-2.4" y2="1.4" width="0.05" layer="39"/>
 </package>
 <package name="0805_LED">
 <description>Chip LED, 2.00 X 1.25 X 1.10 mm body
@@ -105,10 +105,10 @@
 <wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.12" layer="51"/>
 <text x="0" y="1.5" size="0.9" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.5" size="0.9" layer="27" font="vector" align="top-center">&gt;VALUE</text>
-<wire x1="-1.9" y1="1.4" x2="-1.9" y2="-1.4" width="0.05" layer="39"/>
-<wire x1="-1.9" y1="-1.4" x2="1.9" y2="-1.4" width="0.05" layer="39"/>
-<wire x1="1.9" y1="-1.4" x2="1.9" y2="1.4" width="0.05" layer="39"/>
-<wire x1="1.9" y1="1.4" x2="-1.9" y2="1.4" width="0.05" layer="39"/>
+<wire x1="-2.4" y1="1.9" x2="-2.4" y2="-1.9" width="0.05" layer="39"/>
+<wire x1="-2.4" y1="-1.9" x2="2.4" y2="-1.9" width="0.05" layer="39"/>
+<wire x1="2.4" y1="-1.9" x2="2.4" y2="1.9" width="0.05" layer="39"/>
+<wire x1="2.4" y1="1.9" x2="-2.4" y2="1.9" width="0.05" layer="39"/>
 </package>
 <package name="SOT-23-NFET">
 <description>3-SOT23, 0.95 mm pitch, 2.37 mm span, 2.92 X 1.30 X 1.10 mm body
@@ -127,10 +127,10 @@
 <wire x1="0.7" y1="-1.52" x2="-0.7" y2="-1.52" width="0.12" layer="51"/>
 <text x="0" y="2.5" size="0.9" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2" size="0.9" layer="27" font="vector" align="top-center">&gt;VALUE</text>
-<wire x1="-1.9" y1="1.9" x2="-1.9" y2="-1.9" width="0.05" layer="39"/>
-<wire x1="-1.9" y1="-1.9" x2="1.9" y2="-1.9" width="0.05" layer="39"/>
-<wire x1="1.9" y1="-1.9" x2="1.9" y2="1.9" width="0.05" layer="39"/>
-<wire x1="1.9" y1="1.9" x2="-1.9" y2="1.9" width="0.05" layer="39"/>
+<wire x1="-2.4" y1="2.4" x2="-2.4" y2="-2.4" width="0.05" layer="39"/>
+<wire x1="-2.4" y1="-2.4" x2="2.4" y2="-2.4" width="0.05" layer="39"/>
+<wire x1="2.4" y1="-2.4" x2="2.4" y2="2.4" width="0.05" layer="39"/>
+<wire x1="2.4" y1="2.4" x2="-2.4" y2="2.4" width="0.05" layer="39"/>
 <rectangle x1="0" y1="-1.45" x2="2.05" y2="1.45" layer="29"/>
 <rectangle x1="-2" y1="0.5" x2="-0.5" y2="1.5" layer="29"/>
 <rectangle x1="-2" y1="-1.5" x2="-0.5" y2="-0.5" layer="29"/>
@@ -138,7 +138,7 @@
 <rectangle x1="-2" y1="0.5" x2="-0.5" y2="1.5" layer="31"/>
 <rectangle x1="-2" y1="-1.5" x2="-0.5" y2="-0.5" layer="31"/>
 </package>
-<package name="IMU">
+<package name="LSM6DS0">
 <description>14-QFN, 0.50 mm pitch, 2.50 X 3.00 X 0.86 mm body
  &lt;p&gt;14-pin QFN package with 0.50 mm pitch  with body size 2.50 X 3.00 X 0.86 mm&lt;/p&gt;</description>
 <smd name="1" x="-1.3625" y="0.75" dx="0.9916" dy="0.2866" layer="1" roundness="100"/>
@@ -169,22 +169,25 @@
 <wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.12" layer="51"/>
 <wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.12" layer="51"/>
 <text x="0" y="2" size="0.9" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2" size="0.9" layer="27" font="vector" align="top-center">&gt;VALUE</text>
 <rectangle x1="-0.7" y1="-0.5" x2="0.7" y2="0.5" layer="41"/>
 <rectangle x1="-0.7" y1="-0.5" x2="0.7" y2="0.5" layer="42"/>
 <rectangle x1="-0.7" y1="-0.5" x2="0.7" y2="0.5" layer="43"/>
+<wire x1="-2.9" y1="2.4" x2="-2.9" y2="-2.4" width="0.127" layer="39"/>
+<wire x1="-2.9" y1="-2.4" x2="2.9" y2="-2.4" width="0.127" layer="39"/>
+<wire x1="2.9" y1="-2.4" x2="2.9" y2="2.4" width="0.127" layer="39"/>
+<wire x1="2.9" y1="2.4" x2="-2.9" y2="2.4" width="0.127" layer="39"/>
 </package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
-<pin name="P$1" x="-10.16" y="0" length="middle"/>
-<pin name="P$2" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="1" x="-10.16" y="0" length="middle"/>
+<pin name="2" x="12.7" y="0" length="middle" rot="R180"/>
 <wire x1="-5.08" y1="0" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="-2.54" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
 <text x="-2.54" y="5.08" size="2.54" layer="95" font="vector">&gt;NAME</text>
-<text x="-2.54" y="-7.62" size="2.54" layer="96" font="vector">&gt;VALUES</text>
+<text x="-2.54" y="-7.62" size="2.54" layer="96" font="vector">&gt;VALUE</text>
 <wire x1="5.08" y1="-2.54" x2="7.62" y2="0" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="LED">
@@ -218,6 +221,7 @@
 <wire x1="-3.97328125" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="-2.54" x2="0" y2="-5.08" width="0.1524" layer="94"/>
 <text x="-10.16" y="5.08" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="-7.62" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 <symbol name="IMU">
 <wire x1="-12.7" y1="7.62" x2="-12.7" y2="-20.32" width="0.1524" layer="94"/>
@@ -230,7 +234,6 @@
 <pin name="SCX" x="20.32" y="0" length="middle" rot="R180"/>
 <pin name="SDX" x="20.32" y="2.54" length="middle" rot="R180"/>
 <pin name="GND" x="-2.54" y="-25.4" length="middle" rot="R90"/>
-<pin name="GND1" x="2.54" y="-25.4" length="middle" rot="R90"/>
 <pin name="VDDIO" x="-2.54" y="12.7" length="middle" rot="R270"/>
 <pin name="SDO_AUX" x="20.32" y="-5.08" length="middle" rot="R180"/>
 <pin name="OCS_AUX" x="20.32" y="-7.62" length="middle" rot="R180"/>
@@ -239,7 +242,6 @@
 <pin name="SDO/SA0" x="-17.78" y="-5.08" length="middle"/>
 <pin name="CS" x="20.32" y="-12.7" length="middle" rot="R180"/>
 <text x="-12.7" y="17.78" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-12.7" y="-33.02" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -250,14 +252,14 @@
 <devices>
 <device name="-0R-0805" package="0805_RESISTOR">
 <connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="CREATOR" value="MING" constant="no"/>
-<attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTPN" value="311-0.0ARCT-ND" constant="no"/>
+<attribute name="CREATOR" value="MING"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="311-0.0ARCT-ND"/>
 <attribute name="VALUE" value="0" constant="no"/>
 </technology>
 </technologies>
@@ -276,9 +278,9 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="CREATOR" value="MING" constant="no"/>
-<attribute name="DIST" value="DIGIKEY" constant="no"/>
-<attribute name="DISTPN" value="160-1178-1-ND" constant="no"/>
+<attribute name="CREATOR" value="MING"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="160-1178-1-ND"/>
 </technology>
 </technologies>
 </device>
@@ -297,20 +299,35 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="CREATOR" value="MING" constant="no"/>
-<attribute name="DIST" value="DIGIKEY" constant="no"/>
-<attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND" constant="no"/>
+<attribute name="CREATOR" value="MING"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="IMU" prefix="U" uservalue="yes">
+<deviceset name="LSM_IMU" prefix="U" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="IMU" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="IMU">
+<device name="" package="LSM6DS0">
+<connects>
+<connect gate="G$1" pin="CS" pad="12"/>
+<connect gate="G$1" pin="GND" pad="6 7"/>
+<connect gate="G$1" pin="INT1" pad="4"/>
+<connect gate="G$1" pin="INT2" pad="9"/>
+<connect gate="G$1" pin="OCS_AUX" pad="10"/>
+<connect gate="G$1" pin="SCL" pad="13"/>
+<connect gate="G$1" pin="SCX" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="14"/>
+<connect gate="G$1" pin="SDO/SA0" pad="1"/>
+<connect gate="G$1" pin="SDO_AUX" pad="11"/>
+<connect gate="G$1" pin="SDX" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VDDIO" pad="5"/>
+</connects>
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="MING" constant="no"/>
