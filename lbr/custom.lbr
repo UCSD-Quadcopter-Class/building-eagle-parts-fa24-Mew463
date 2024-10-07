@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -39,7 +39,7 @@
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
@@ -113,9 +113,9 @@
 <package name="SOT-23-NFET">
 <description>3-SOT23, 0.95 mm pitch, 2.37 mm span, 2.92 X 1.30 X 1.10 mm body
  &lt;p&gt;3-pin SOT23 package with 0.95 mm pitch, 2.37 mm span with body size 2.92 X 1.30 X 1.10 mm&lt;/p&gt;</description>
-<smd name="G" x="-1.0266" y="0.95" dx="1.2991" dy="0.6" layer="1" stop="no"/>
-<smd name="S" x="-1.0266" y="-0.95" dx="1.2991" dy="0.6" layer="1" stop="no"/>
-<smd name="D" x="1.0266" y="0" dx="1.2991" dy="0.6" layer="1" stop="no"/>
+<smd name="G" x="-1.0266" y="0.95" dx="1.5" dy="1" layer="1" stop="no" cream="no"/>
+<smd name="S" x="-1.0266" y="-0.95" dx="1.5" dy="1" layer="1" stop="no" cream="no"/>
+<smd name="D" x="1.0266" y="0" dx="2.05" dy="2.9" layer="1" stop="no" cream="no"/>
 <circle x="-1.204" y="1.754" radius="0.25" width="0" layer="21"/>
 <wire x1="-0.7" y1="1.564" x2="0.7" y2="1.564" width="0.12" layer="21"/>
 <wire x1="0.7" y1="1.564" x2="0.7" y2="0.554" width="0.12" layer="21"/>
@@ -131,30 +131,30 @@
 <wire x1="-2.4" y1="-2.4" x2="2.4" y2="-2.4" width="0.05" layer="39"/>
 <wire x1="2.4" y1="-2.4" x2="2.4" y2="2.4" width="0.05" layer="39"/>
 <wire x1="2.4" y1="2.4" x2="-2.4" y2="2.4" width="0.05" layer="39"/>
-<rectangle x1="0" y1="-1.45" x2="2.05" y2="1.45" layer="29"/>
-<rectangle x1="-2" y1="0.5" x2="-0.5" y2="1.5" layer="29"/>
-<rectangle x1="-2" y1="-1.5" x2="-0.5" y2="-0.5" layer="29"/>
-<rectangle x1="0" y1="-1.45" x2="2.05" y2="1.45" layer="31"/>
-<rectangle x1="-2" y1="0.5" x2="-0.5" y2="1.5" layer="31"/>
-<rectangle x1="-2" y1="-1.5" x2="-0.5" y2="-0.5" layer="31"/>
+<rectangle x1="-1.5" y1="0.75" x2="-0.5" y2="1.25" layer="31"/>
+<rectangle x1="-1.5" y1="-1.25" x2="-0.5" y2="-0.75" layer="31"/>
+<rectangle x1="0.5" y1="-0.25" x2="1.5" y2="0.25" layer="31"/>
+<rectangle x1="-1.5" y1="0.75" x2="-0.5" y2="1.25" layer="32"/>
+<rectangle x1="-1.5" y1="-1.25" x2="-0.5" y2="-0.75" layer="32"/>
+<rectangle x1="0.5" y1="-0.25" x2="1.5" y2="0.25" layer="32"/>
 </package>
 <package name="LSM6DS0">
 <description>14-QFN, 0.50 mm pitch, 2.50 X 3.00 X 0.86 mm body
  &lt;p&gt;14-pin QFN package with 0.50 mm pitch  with body size 2.50 X 3.00 X 0.86 mm&lt;/p&gt;</description>
-<smd name="1" x="-1.3625" y="0.75" dx="0.9916" dy="0.2866" layer="1" roundness="100"/>
-<smd name="2" x="-1.3625" y="0.25" dx="0.9916" dy="0.2866" layer="1" roundness="100"/>
-<smd name="3" x="-1.3625" y="-0.25" dx="0.9916" dy="0.2866" layer="1" roundness="100"/>
-<smd name="4" x="-1.3625" y="-0.75" dx="0.9916" dy="0.2866" layer="1" roundness="100"/>
-<smd name="5" x="-0.5" y="-1.1125" dx="0.9916" dy="0.2866" layer="1" roundness="100" rot="R90"/>
-<smd name="6" x="0" y="-1.1125" dx="0.9916" dy="0.2866" layer="1" roundness="100" rot="R90"/>
-<smd name="7" x="0.5" y="-1.1125" dx="0.9916" dy="0.2866" layer="1" roundness="100" rot="R90"/>
-<smd name="8" x="1.3625" y="-0.75" dx="0.9916" dy="0.2866" layer="1" roundness="100"/>
-<smd name="9" x="1.3625" y="-0.25" dx="0.9916" dy="0.2866" layer="1" roundness="100"/>
-<smd name="10" x="1.3625" y="0.25" dx="0.9916" dy="0.2866" layer="1" roundness="100"/>
-<smd name="11" x="1.3625" y="0.75" dx="0.9916" dy="0.2866" layer="1" roundness="100"/>
-<smd name="12" x="0.5" y="1.1125" dx="0.9916" dy="0.2866" layer="1" roundness="100" rot="R90"/>
-<smd name="13" x="0" y="1.1125" dx="0.9916" dy="0.2866" layer="1" roundness="100" rot="R90"/>
-<smd name="14" x="-0.5" y="1.1125" dx="0.9916" dy="0.2866" layer="1" roundness="100" rot="R90"/>
+<smd name="1" x="-1.3625" y="0.75" dx="0.875" dy="0.25" layer="1" roundness="100"/>
+<smd name="2" x="-1.3625" y="0.25" dx="0.875" dy="0.25" layer="1" roundness="100"/>
+<smd name="3" x="-1.3625" y="-0.25" dx="0.875" dy="0.25" layer="1" roundness="100"/>
+<smd name="4" x="-1.3625" y="-0.75" dx="0.875" dy="0.25" layer="1" roundness="100"/>
+<smd name="5" x="-0.5" y="-1.1125" dx="0.875" dy="0.25" layer="1" roundness="100" rot="R90"/>
+<smd name="6" x="0" y="-1.1125" dx="0.875" dy="0.25" layer="1" roundness="100" rot="R90"/>
+<smd name="7" x="0.5" y="-1.1125" dx="0.875" dy="0.25" layer="1" roundness="100" rot="R90"/>
+<smd name="8" x="1.3625" y="-0.75" dx="0.875" dy="0.25" layer="1" roundness="100"/>
+<smd name="9" x="1.3625" y="-0.25" dx="0.875" dy="0.25" layer="1" roundness="100"/>
+<smd name="10" x="1.3625" y="0.25" dx="0.875" dy="0.25" layer="1" roundness="100"/>
+<smd name="11" x="1.3625" y="0.75" dx="0.875" dy="0.25" layer="1" roundness="100"/>
+<smd name="12" x="0.5" y="1.1125" dx="0.875" dy="0.25" layer="1" roundness="100" rot="R90"/>
+<smd name="13" x="0" y="1.1125" dx="0.875" dy="0.25" layer="1" roundness="100" rot="R90"/>
+<smd name="14" x="-0.5" y="1.1125" dx="0.875" dy="0.25" layer="1" roundness="100" rot="R90"/>
 <circle x="-2.004" y="1.3973" radius="0.25" width="0" layer="21"/>
 <wire x1="-1.5" y1="1.1473" x2="-1.5" y2="1.25" width="0.12" layer="21"/>
 <wire x1="-1.5" y1="1.25" x2="-0.8973" y2="1.25" width="0.12" layer="21"/>
@@ -169,14 +169,14 @@
 <wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.12" layer="51"/>
 <wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.12" layer="51"/>
 <text x="0" y="2" size="0.9" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-0.7" y1="-0.5" x2="0.7" y2="0.5" layer="41"/>
-<rectangle x1="-0.7" y1="-0.5" x2="0.7" y2="0.5" layer="42"/>
-<rectangle x1="-0.7" y1="-0.5" x2="0.7" y2="0.5" layer="43"/>
+<rectangle x1="-1.5" y1="-1.25" x2="1.5" y2="1.25" layer="41"/>
 <wire x1="-2.4" y1="2.4" x2="-2.4" y2="-2.4" width="0.127" layer="39"/>
 <wire x1="-2.4" y1="-2.4" x2="2.4" y2="-2.4" width="0.127" layer="39"/>
 <wire x1="2.4" y1="-2.4" x2="2.4" y2="2.4" width="0.127" layer="39"/>
 <wire x1="2.4" y1="2.4" x2="-2.4" y2="2.4" width="0.127" layer="39"/>
 <text x="-2.54" y="-3.81" size="0.9" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-1.5" y1="-1.25" x2="1.5" y2="1.25" layer="42"/>
+<rectangle x1="-1.5" y1="-1.25" x2="1.5" y2="1.25" layer="43"/>
 </package>
 </packages>
 <symbols>
